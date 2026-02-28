@@ -1,6 +1,6 @@
 ---
 name: quarkus-platform
-description: Guides implementation, debugging, and architecture decisions across Quarkus core and the extension ecosystem. Use when building or maintaining Quarkus applications, selecting extensions, or troubleshooting build and runtime behavior.
+description: Guides implementation, debugging, and architecture decisions across the Quarkus platform and extension ecosystem. Use when building or maintaining Quarkus applications, selecting extensions, or troubleshooting build and runtime behavior.
 ---
 
 # Quarkus Platform
@@ -12,8 +12,10 @@ Use decision tree below to find the right domain, then load detailed references.
 
 ```
 What do you need?
-├─ Dependency injection, config, lifecycle
-│  └─ core
+├─ Dependency injection (CDI / ArC)
+│  └─ dependency-injection
+├─ Application configuration (.properties, profiles, config mapping)
+│  └─ configuration
 ├─ REST, HTTP APIs, templates, OpenAPI
 │  └─ web
 ├─ Databases, ORM, migrations, data access
