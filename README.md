@@ -1,8 +1,21 @@
-# Quarkus Skill for OpenCode
+# Quarkus Skill
 
 Comprehensive Quarkus platform reference docs for AI/LLM consumption. Covers implementation, troubleshooting, and architecture decisions across core Quarkus workflows and extension ecosystems.
 
 ## Install
+
+### AI Agents
+
+Add the skill to your AI coding assistant for richer context:
+
+```bash
+npx skills add b6k-dev/quarkus-skill
+```
+
+This works with many different tools including: Claude Code, Codex, Cursor, Gemini CLI, GitHub Copilot, Goose, OpenCode, Windsurf.
+
+
+### Opencode 
 
 Local installation (current project only):
 
