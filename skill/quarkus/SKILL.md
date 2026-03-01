@@ -16,8 +16,12 @@ What do you need?
 │  └─ dependency-injection
 ├─ Application configuration (.properties, profiles, config mapping)
 │  └─ configuration
-├─ REST, HTTP APIs, templates, OpenAPI
-│  └─ web
+├─ REST and HTTP APIs
+│  └─ web-rest
+├─ Templates and server-side rendering (Qute)
+│  └─ templates
+├─ OpenAPI and API contract documentation
+│  └─ openapi
 ├─ Databases, ORM, migrations, data access
 │  └─ data
 ├─ Event streaming and asynchronous messaging channels
