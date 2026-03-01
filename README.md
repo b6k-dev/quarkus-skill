@@ -1,6 +1,8 @@
-# Quarkus Skill
+# Quarkus Skill for AI Coding Assistants
 
-Comprehensive Quarkus platform reference docs for AI/LLM consumption. Covers implementation, troubleshooting, and architecture decisions across core Quarkus workflows and extension ecosystems.
+Quarkus platform reference docs and installable skill for AI coding assistants, including OpenCode, Codex, Cursor, Claude Code, Gemini CLI, and GitHub Copilot.
+
+Use this repository to get concise, example-first guidance for building and troubleshooting Quarkus applications: CDI and dependency injection, configuration, tooling workflows, and architecture decisions.
 
 ## Install
 
