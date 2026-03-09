@@ -15,4 +15,4 @@ Every module follows 5-file pattern:
 - Module IDs in `skill/quarkus/SKILL.md` are routing keys; they must match folder names under `skill/quarkus/references/`.
 - Keep `api.md` concise and example-first; keep the examples condensed and minimal yet informative; long narrative text quickly becomes noisy for this module.
 - Avoid hardcoding spec versions in reference prose unless they are intentionally pinned and regularly maintained.
-- In module `README.md` files, put cross-module backlinks in a final `## See Also` section with explicit relative links to the referenced modules.
+- Remember to include reference to other existing modules when relevant (do not blindly link, think if there are actual cross cutting concerns between the modules) - put cross-module backlinks in a final `## See Also` section with explicit relative links to the referenced modules.
