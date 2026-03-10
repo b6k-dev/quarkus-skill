@@ -23,7 +23,14 @@ What do you need?
 ├─ OpenAPI and API contract documentation
 │  └─ openapi
 ├─ Databases, ORM, migrations, data access
-│  └─ data
+│  ├─ Standard JPA / Hibernate ORM usage
+│  │  └─ data-orm
+│  ├─ Panache entities and repositories for simpler CRUD/data access
+│  │  └─ data-panache
+│  ├─ Schema migrations and database evolution with Flyway
+│  │  └─ data-migrations
+│  └─ Advanced Hibernate ORM features: multiple persistence units, multitenancy, caching, extension points
+│     └─ data-orm-advanced
 ├─ Event streaming and asynchronous messaging channels
 │  └─ messaging
 ├─ Communicating with external APIs, communication between services
