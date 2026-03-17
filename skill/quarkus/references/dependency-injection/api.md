@@ -225,36 +225,6 @@ class BillingService {
 
 For decorators, `@Lock`, and `InterceptionProxy`, see `patterns.md`.
 
-## Events and observers
-
-```java
-record OrderPlaced(String id) {
-}
-
-@ApplicationScoped
-class Orders {
-    @Inject
-    Event<OrderPlaced> orderPlaced;
-
-    void place(String id) {
-        orderPlaced.fire(new OrderPlaced(id));
-    }
-
-    CompletionStage<OrderPlaced> placeAsync(String id) {
-        return orderPlaced.fireAsync(new OrderPlaced(id));
-    }
-}
-
-@ApplicationScoped
-class AuditLog {
-    void onOrder(@Observes OrderPlaced event) {
-    }
-
-    void onOrderAsync(@ObservesAsync OrderPlaced event) {
-    }
-}
-```
-
 ## Quarkus-specific CDI APIs
 
 Default/conditional wiring:

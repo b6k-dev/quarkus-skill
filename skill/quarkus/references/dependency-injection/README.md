@@ -1,6 +1,6 @@
 # Dependency Injection Reference
 
-Use this module when the task is about Quarkus CDI/ArC dependency injection: bean discovery, scopes, qualifiers, producers, lifecycle, interception, events, and ArC settings.
+Use this module when the task is about Quarkus CDI/ArC dependency injection: bean discovery, scopes, qualifiers, producers, lifecycle, interception, and ArC settings.
 
 ## Overview
 
@@ -32,3 +32,7 @@ Quarkus dependency injection is powered by ArC, a build-time optimized CDI imple
 [configuration.md](./configuration.md) - ArC and bean discovery configuration
 [patterns.md](./patterns.md) - Repeatable dependency injection and lifecycle workflows
 [gotchas.md](./gotchas.md) - Common CDI/ArC pitfalls and fixes
+
+## See Also
+
+- [../cdi-events/README.md](../cdi-events/README.md) - Standalone CDI event guidance for local observer patterns

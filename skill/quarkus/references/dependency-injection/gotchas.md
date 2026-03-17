@@ -34,13 +34,6 @@ Common CDI/ArC pitfalls, symptoms, and fixes.
 | Third-party beans break startup | Problematic beans discovered automatically | Exclude with `quarkus.arc.exclude-types` or `quarkus.arc.exclude-dependency.*` |
 | CDI Portable Extension does not work | Portable extensions are not supported in Quarkus build-time model | Replace with Quarkus extension/build-step approach |
 
-## Reactive and Async Observer Pitfalls
-
-| Symptom | Likely cause | Fix |
-|---------|--------------|-----|
-| `@ObservesAsync` used as reactive pipeline stage | CDI async observers are thread-offloaded, not reactive stream stages | Keep observers `void`, use reactive APIs for stream composition |
-| Async observer exception seems "lost" | `fireAsync()` completion not checked | Observe returned `CompletionStage` and handle exceptional completion |
-
 ## Dev Mode Debugging Pitfalls
 
 | Symptom | Likely cause | Fix |

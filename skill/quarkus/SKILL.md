@@ -32,7 +32,13 @@ What do you need?
 │  └─ Advanced Hibernate ORM features: multiple persistence units, multitenancy, caching, extension points
 │     └─ data-orm-advanced
 ├─ Event streaming and asynchronous messaging channels
-│  └─ messaging
+│  ├─ Is the event crossing a service/process boundary?
+│  │  └─ YES -> messaging
+│  └─ NO (in-process only)
+│     ├─ Need clustering or non-blocking event loop behavior
+│     │  └─ YES -> vertx-event-bus
+│     └─ Want portability and type safety
+│        └─ YES -> cdi-events
 ├─ Communicating with external APIs, communication between services
 │  └─ service-communication
 ├─ Authentication, authorization, identity providers
