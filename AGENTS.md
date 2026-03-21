@@ -2,7 +2,7 @@
 Skill repository for the Quarkus platform - structured reference docs to be used by AI/LLM.
 
 # Reference File Structure
-Every module follows 5-file pattern:
+Every module follows a core 5-file pattern:
 
 - README.md — Overview, when to use
 - api.md — Runtime API reference
@@ -10,9 +10,12 @@ Every module follows 5-file pattern:
 - patterns.md — Usage patterns
 - gotchas.md — Pitfalls, limitations
 
+Some modules may add `testing.md` when the testing workflow is substantial enough to deserve standalone guidance.
+
 # General Guidelines
 
 - Module IDs in `skill/quarkus/SKILL.md` are routing keys; they must match folder names under `skill/quarkus/references/`.
 - Keep `api.md` concise and example-first; keep the examples condensed and minimal yet informative; long narrative text quickly becomes noisy for this module.
+- Use `testing.md` for integration-test guidance that would otherwise make `patterns.md` too broad or too long.
 - Avoid hardcoding spec versions in reference prose unless they are intentionally pinned and regularly maintained.
 - Remember to include reference to other existing modules when relevant (do not blindly link, think if there are actual cross cutting concerns between the modules) - put cross-module backlinks in a final `## See Also` section with explicit relative links to the referenced modules.
