@@ -64,8 +64,17 @@ What do you need?
 │  │  └─ security-webauthn
 │  └─ Need to test secured applications
 │     └─ security-testing
-├─ Logging, health, metrics, traces, 
-│  └─ observability
+├─ Logging, health, metrics, traces
+│  ├─ Need help choosing signals, management exposure, or local observability stack
+│  │  └─ observability
+│  ├─ Logging configuration, JSON logs, MDC, and log shipping
+│  │  └─ observability-logging
+│  ├─ Liveness/readiness/startup probes and Health UI
+│  │  └─ observability-health
+│  ├─ Metrics, Micrometer registries, and Prometheus/OTLP export
+│  │  └─ observability-metrics
+│  └─ Distributed tracing, propagation, and OpenTelemetry
+│     └─ observability-tracing
 ├─ Native image, jars, and container packaging
 │  └─ native-and-packaging
 ├─ Testing 
