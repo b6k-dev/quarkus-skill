@@ -49,7 +49,21 @@ What do you need?
 │  │     └─ Standard HTTP/JSON or simpler interoperability matters more
 │  │        └─ service-communication-rest
 ├─ Authentication, authorization, identity providers
-│  └─ security
+│  ├─ Need core Quarkus security concepts, RBAC, built-in auth mechanisms, or custom policies
+│  │  └─ security-core
+│  ├─ Protect endpoints with OpenID Connect
+│  │  ├─ Inbound bearer tokens, browser login redirects, or hybrid OIDC apps
+│  │  │  └─ security-oidc
+│  │  └─ Outbound token acquisition, refresh, exchange, or propagation to downstream services
+│  │     └─ security-oidc-client
+│  ├─ Need JWT verification or token building without full OIDC integration
+│  │  └─ security-jwt
+│  ├─ Need username/password identity stores backed by JPA, JDBC, or LDAP
+│  │  └─ security-identity-providers
+│  ├─ Need passkeys or WebAuthn flows
+│  │  └─ security-webauthn
+│  └─ Need to test secured applications
+│     └─ security-testing
 ├─ Logging, health, metrics, traces, 
 │  └─ observability
 ├─ Native image, jars, and container packaging
