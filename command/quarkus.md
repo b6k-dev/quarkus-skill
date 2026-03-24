@@ -11,8 +11,8 @@ Load the Quarkus skill and help with any Quarkus development task.
 If $ARGUMENTS contains `--update-skill`:
 
 1. Determine install location by checking which exists:
-   - Local: `.opencode/skill/quarkus/`
-   - Global: `~/.config/opencode/skill/quarkus/`
+   - Local: `.opencode/skills/quarkus/`
+   - Global: `~/.config/opencode/skills/quarkus/`
 
 2. Run the appropriate install command:
    ```bash
@@ -37,7 +37,7 @@ Analyze $ARGUMENTS to determine:
 - **Module(s) needed** 
 - **Task type** (new project setup, feature implementation, debugging, config)
 
-Use decision trees in SKILL.md to select correct product.
+Use decision trees in SKILL.md to select the correct module.
 
 ### Step 4: Read relevant reference files
 

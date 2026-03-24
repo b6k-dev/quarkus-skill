@@ -21,7 +21,7 @@ Quarkus supports two complementary security-testing styles:
 ## Scope split
 
 - This module covers testing secured applications.
-- For general Quarkus test structure use `testing`.
+- For general Quarkus test structure, start with the feature module under test and use `tooling` for CLI and test workflow commands.
 
 ## Quick Routing
 

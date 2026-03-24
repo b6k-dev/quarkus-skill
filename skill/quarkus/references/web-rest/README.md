@@ -23,6 +23,7 @@ Quarkus REST (formerly RESTEasy Reactive) is Quarkus' Jakarta REST implementatio
 - This module covers REST and HTTP behavior.
 - For server-side templates use `templates`.
 - For API contract generation and docs use `openapi`.
+- For outbound HTTP clients use `service-communication-rest`.
 
 ## Quick Routing
 
@@ -37,3 +38,10 @@ Quarkus REST (formerly RESTEasy Reactive) is Quarkus' Jakarta REST implementatio
 [configuration.md](./configuration.md) - Quarkus REST and JSON configuration keys
 [patterns.md](./patterns.md) - Repeatable endpoint implementation workflows
 [gotchas.md](./gotchas.md) - Common web/REST pitfalls and fixes
+
+## See Also
+
+- [../openapi/README.md](../openapi/README.md) - OpenAPI contract generation and Swagger UI guidance
+- [../templates/README.md](../templates/README.md) - Qute templates and server-side rendering
+- [../dependency-injection/README.md](../dependency-injection/README.md) - CDI patterns used by REST resources and providers
+- [../service-communication-rest/README.md](../service-communication-rest/README.md) - Typed outbound HTTP clients and client-side testing
