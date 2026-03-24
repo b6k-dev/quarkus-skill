@@ -77,8 +77,14 @@ What do you need?
 │     └─ observability-tracing
 ├─ Native image, jars, and container packaging
 │  └─ native-and-packaging
+│     ├─ Need a native build, closed-world metadata, native SSL, or native-only runtime behavior
+│     │  └─ native-image
+│     ├─ Need JVM artifact shape decisions: `fast-jar`, `uber-jar`, `mutable-jar`, layout, or re-augmentation
+│     │  └─ packaging-jars
+│     └─ Need container image packaging: Jib, Docker, Podman, OpenShift, Buildpacks, tags, push, or base images
+│        └─ packaging-containers
 ├─ Testing 
-│  └─ testing 
+│  └─ Start with the feature module you are testing (for example `security-testing` or `native-image`)
 └─ Dev mode, CLI, build plugins
    └─ tooling
 ```
